@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/square_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/card_container"
+      android:layout_width="77dp"
+      android:layout_height="77dp"
+      android:layout_gravity="center"
+      app:cardCornerRadius="24dp"
+      app:cardElevation="8dp"
+      android:layout_margin="8dp"
+      app:layout_constraintBottom_toTopOf="@id/risk_porto_percentage"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/risk_to_porto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:textColor="#000"
+        tools:text="10%"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        />
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/risk_porto_percentage"
+      android:layout_width="88dp"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:gravity="center_horizontal"
+      android:lineSpacingExtra="4sp"
+      android:lines="1"
+      android:textColor="#000"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent "
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/card_container"
+      tools:text="Champions asf asf asfasf as fas f" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
